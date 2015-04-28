@@ -1,0 +1,162 @@
+/* common css */
+body{
+  color: #000;
+  font-size: 14px;
+}
+
+.SMS_top_navi{
+  border:1px solid orange;
+  display:inline-block;
+  width:50%;
+  float:left;
+  position:relative;
+}
+
+.SMS_top_navi img{
+  width:100%;
+  display:block;
+}
+
+.SMS_top_navi span{
+  position:absolute;
+  top:0;
+  border:0px solid #ddd;
+  left:0;
+  background:orange;
+  padding:2px 3px;
+  -webkit-border-radius:0 0 10px 0;
+  box-shadow:2px 2px 0 rgba(255, 165, 0, 0.4), 2px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+ul.SMS_list_container{
+  border:20px solid rgba(0,0,0,0.4);
+}
+
+li.test_list{
+  border:1px solid rgba(255,255,255,0.4);
+  color:rgb(0,0,255);
+  font-size:50px;
+  line-height:80px;
+  padding:10px 0;
+  margin-bottom:10px;
+}
+
+ul.SMS_list_container li:nth-child(1){
+  background-color:rgba(0,0,0,.7);
+  color:#fff;
+}
+
+.footer_menu {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+  border-top:2px solid rgba(255, 165, 0, 0.8);
+  padding:5px 0;
+  color:rgba(255,255,255,0.9);
+  text-align:center;
+}
+
+.animation_resent {
+	-webkit-animation: topDownAnimation 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+.SMS_top_banner img{
+  width:100%;
+}
+
+.join_message{
+  width:100%;
+  height: 100px;
+}
+
+form{
+  padding:0 20px;
+  /*background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtL-Aa4unhpr-yKgoP6krBnV6clMWrKgqhS4_CJH0VDq0PiY5K);*/
+}
+
+.telephone input{
+  width:80px;
+}
+
+
+
+/* 메리분 상단 탑 배너 -- 2015-04-16 : Start */
+.fixed_top_banner {
+overflow:hidden;
+position:relative;
+}
+
+.fixed_top_banner .container_Box ul {
+overflow:hidden;
+}
+
+.fixed_top_banner .container_Box ul li {
+line-height:0px;
+}
+
+.fixed_top_banner .container_Box ul li img {
+width:100%;
+}
+
+/* 메리분 상단 탑 배너 -- 2015-04-16 : end */
+
+
+.Hery_topSub{
+    float:left;
+    position:relative;
+    display:inline-block;
+    width:20%;
+    text-align:center;
+    border:1px solid #ddd;
+    height:30px;
+    line-height:30px;
+}
+
+#cart_badge, #cart_badge2{
+	position:absolute;
+	display:inline-block;
+	bottom: -12px;
+  	right: 26px;
+	margin-left:-50%;
+	background:red;
+	padding:2px 4px;
+	border-radius:50%;
+	border:2px solid orange;
+	color:white;
+	line-height:9px;
+	font-size:9px;
+}
+
+
+
+
+
+
+
+
+/* animation Set
+======================================================== */
+@-webkit-keyframes topDownAnimation{
+	0% {
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	}
+	5%{
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-5px) skewX(3deg) skewY(0deg);
+	}
+	10%{
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	}
+	15%{
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-5px) skewX(-3deg) skewY(0deg);
+	}
+	20%{
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	}
+	100%{
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	}
+}

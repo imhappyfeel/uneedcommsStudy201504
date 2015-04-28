@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	
+	<title>양재필</title>
+	
+	<!-- plug-in : Js -->
+	<script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
+
+	<!-- plug-in : CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/skeleton.css">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+
+</head>
+<body>
+
+
+	<!-- 메리분 상단 탑 배너 -- 2015-04-16 : Start -->
+	<div class="u-cf">
+		<div class="fixed_top_banner">
+			<div class="container_Box">
+				<ul>
+					<li>
+					<img id="이미지" src="http://www.maryboone.co.kr/design/maryboone/smartskin/top_banner.jpg" onload="smartskinAppLink(this)" onclick="smartskinAppLink(this)"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 메리분 상단 탑 배너 -- 2015-04-16 : end -->
+	
+	
+
+	<div class="container">
+		<div class="Hery_TopMenu ">
+			<ul class="">
+				<li class="Hery_topSub"><a class="Hery_TopColor">LOGIN</a></li>
+				<li class="Hery_topSub"><a class="Hery_TopColor">JOIN</a></li>
+				<li class="Hery_topSub"><a class="Hery_TopColor">MYPAGE</a></li>
+				<li class="Hery_topSub">
+					<a class="Hery_TopColor">CART</a>
+					<span id="cart_badge" class="cart_count">5</span>
+				</li>
+				<li class="Hery_topSub">
+					<a class="Hery_TopColor">JOIN</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- http://www.w3schools.com/tags/att_input_type.asp -->
+	<!-- http://smartskin.co.kr/test/study/ -->
+	<form id="join" name="join" method="GET" action="http://smartskin.co.kr/test/study/index.php">
+
+		<div>
+			<label for="ID">ID</label>
+			<input type="text" value="" name="id">
+		</div>
+
+		<hr>
+
+		<div>	
+			<label for="PW">PW</label>
+			<input type="password" value="" name="pw">
+		</div>
+
+		<hr>
+
+		<div>
+			
+			[성별]<br>
+
+			<label>
+				<input type="radio" value="male" name="gender">
+				<i>남자</i>
+			</label>
+			
+			<label>
+				<input type="radio" value="female" name="gender">
+				<i>여자</i>
+			</label>
+
+			<label>
+				<input type="radio" value="unisex" name="gender">
+				<i>모르겠음</i>
+			</label>
+
+		</div>
+
+		<hr>
+
+		<div class="telephone">
+			휴대폰번호<br>
+			<input type="text" value="" name="tel[]"> -
+			<input type="text" value="" name="tel[]"> -
+			<input type="text" value="" name="tel[]">
+		</div>
+
+		<hr>
+		
+		<textarea class="join_message" name="join_message"></textarea>
+
+		<hr>
+
+		<div>
+			컬러<br>
+			<select name="size">
+				<option value="S">55 사이즈 입니다.</option>
+				<option value="M">66 사이즈 입니다.</option>
+				<option value="L">77 사이즈 입니다.</option>
+			</select>
+		</div>
+
+		<hr>
+
+		<div>
+			<input type="submit" value="보내기">
+		</div>
+
+	</form>
+
+
+	<div class="SMS_top_banner"><img src="http://www.haemillee.co.kr/img/mobile/mobileapp_banner.jpg"></div>
+
+	<!-- 상단 메뉴 -->
+	<div class="SMS_top_navi" data-prd="1">
+		<img src="http://bibiesong.com/web/product/big/201502/1523_shop1_882833.jpg">
+		<span class="animation_resent" id="animation_resent_1">RESENT</span>
+	</div>
+	
+	<div class="SMS_top_navi" data-prd="2">
+		<img src="http://bibiesong.	com/web/product/big/201502/1523_shop1_882833.jpg">
+		<span class="animation_resent">RESENT</span>
+	</div>
+
+	<p>
+		<img src="http://img.styleberry.co.kr/style_2015/cardigan/0320_ar/cd_05.jpg" width="100%">
+		<img src="http://img.styleberry.co.kr/style_2015/cardigan/0320_ar/cd_05.jpg" width="100%">
+  	</p>
+
+	<div class="footer_menu">
+		하단 메뉴
+	</div>
+
+  	<!-- import js -->
+  	<script type="text/javascript" src="./js/custom.js"></script>
+
+</body>
+</html>
