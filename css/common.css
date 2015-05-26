@@ -131,9 +131,14 @@ width:100%;
 	font-size:9px;
 }
 
+/* 배너 디자인 : 2015-05-26 */
+.banner img{
+	width:100%;
+}
 
-
-
+.SMS_logo h1{
+	text-align:center;
+}
 
 
 

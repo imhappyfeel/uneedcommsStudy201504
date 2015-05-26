@@ -1,4 +1,6 @@
 /*
+html, CSS 스터디
+#############################################
 1) 앙팡토토에서
 2) IOS 내부에서
 3) 가리려는 element를  선택
@@ -86,14 +88,25 @@ http://choijiho.tistory.com/41
 /* function Call(호출)
  * =========================================================== */
 cart_count_change(3);
-
-
-
-
-
+mainImgBannerClick("#SMS_clickChange");
 
 /* function List
  * =========================================================== */
+function mainImgBannerClick(obj){
+	var o_img=$(obj).attr("src");
+	var c_img=$(obj).attr("data-changedImg");
+	$(obj).click(
+		function(){
+			var cur_img = $(this).attr("src");
+			if(cur_img==o_img){
+				$(this).attr("src",c_img);
+			}else{
+				$(this).attr("src",o_img);
+			}
+		}
+	);
+}
+
 function smartskinAppLink(){
 	var cookie=document.cookie;
 	var in_app=cookie.indexOf('SMA_in_app=smartapp');
